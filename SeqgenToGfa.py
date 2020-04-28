@@ -24,7 +24,11 @@ pos_to_step_ids_in_that_pos_dict = {}
 step_id_to_seq_dict = {}
 path_to_nodes_dict = {} # Name and Step List
 path_nodes_dict = {}
+
 links_to_write = ''
+steps_to_write = ''
+paths_to_write = ''
+
 
 path_nodes_dict['AncestralReference'] = []
 for step_id, nt in enumerate(ref_seq):
