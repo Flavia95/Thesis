@@ -1,4 +1,4 @@
-After [GFAtoVCFodgi.py](Thesis/GFAtoVCFodgi.py) with detect bubble.
+After [GFAtoVCFodgi.py](/Thesis/GFAtoVCFodgi.py) with detect bubble.
 Now I convert Simulation to VCF without going through the graph for test result of MS.
 
 I simulated two populations that are divided into three different times.
