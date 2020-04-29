@@ -1,4 +1,4 @@
-After [GFAtoVCFodgi.py](/tesiFlavia/GFAtoVCFodgi.py) with detect bubble.
+After [GFAtoVCFodgi.py](Thesis/GFAtoVCFodgi.py) with detect bubble.
 Now I convert Simulation to VCF without going through the graph for test result of MS.
 
 I simulated two populations that are divided into three different times.
@@ -18,7 +18,7 @@ I simulated two populations that are divided into three different times.
 
 #### 2. MStoVCF
 
-[ms2vcf.py](/tesiFlavia/ms2vcf.py)  
+[ms2vcf.py](/Thesis/ms2vcf.py)  
  
 #### 3. Bgzip and Tabix
 
@@ -33,13 +33,13 @@ tabix: for f in ./*.vcf.gz; do tabix -h "$f"; done
 parallel bcftools view -S pop_1.txt  ms_rep{1}.vcf.gz -o ms_rep{1}.bcf.vcf.gz ::: {1..100} #pop1
 parallel bcftools view -S pop_2.txt ms_rep{1}.vcf.gz -o ms_rep{1}.bcf.vcf ::: {1..100}  #pop2 
 ```
-#### 5. Calculate Fst statistics in pop1 and pop2
-```
+#### 5. Calculate Allele Frequencies in pop1 and pop2 with vcftools
+ ```
 parallel vcftools --vcf ms_rep{1}.bcf.vcf --freq --out ms_rep{1}.bcf.pop1.vcf ::: {1..100}   #pop1
 parallel vcftools --vcf ms_rep{1}.bcf.vcf --freq --out ms_rep{1}.bcf.pop2.vcf ::: {1..100}  #pop2
 ```
 #### 6. Fst script
-[CalculateFst.py](/tesiFlavia/CalculateFst.py)  
+[CalculateFst.py](/Thesis/CalculateFst.py)  
 
 CalculateFSt for three different time.
 
