@@ -8,7 +8,7 @@ with open('tree2pop.ms','r') as f:              #input is: output of ms as tree 
 print('ms_command: '+ ms_command)     
 
 if '-I' in ms_command:
-	info_list = ms_command.split('-I ')[1].split(' ')[:3]   #extract individual and pop from ms command (I)
+	info_list = ms_command.split('-I ')[1].split(' ')[:3]   #extract individual and pop from ms command (in particular from -I)
 	print('-I list:', info_list)
 
 	POP = int(info_list[0])
