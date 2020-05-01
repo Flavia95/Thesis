@@ -30,10 +30,4 @@ if '-I' in ms_command:
 	#TODO (IMPORTANT): add version of script that there is write of a file metadata tab separated 
 	#to give as second input of script that calculate AF  
 
-			
-'''
-metadata = 'metadata' 
-with open(metadata, 'w') as fw:
-    fw.write(str(paths_to_write))
-    print(metadata + ' written')
-'''
+		
