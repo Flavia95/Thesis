@@ -5,7 +5,7 @@ After [SimulationToVcf.md](SimulationToVcf.md) I convert MStoGfa for analysis of
 ```
 ./ms 4 1 -t 11.2 -I 2 2 2 -g 1 44.36 -n 2 0.05 -eg 0.03125 1 0.0 -ej 0.03125 2 1 > out2pop.ms
 ```
- [MstoGfa.py](/tesiFlavia/MstoGfa.py)
+ [MstoGfa.py](/MstoGfa.py)
 
 I get the GFA but I need the whole sequence rebuilt and the links between the bubbles for use "odgi".
 
@@ -30,7 +30,7 @@ I have Tree with the family history, but the reconstructed sequence is missing.
  
  #### 3. Seq-gene to GFA
 
- [SeqGenetoGfa.py](/tesiFlavia/SeqgenToGfa.py)
+ [SeqGenetoGfa.py](/SeqgenToGfa.py)
  
  
  #### 4. Calculate Allele Frequency on GFA :)
@@ -38,7 +38,7 @@ I have Tree with the family history, but the reconstructed sequence is missing.
 In this example there are only biallelic alleles (or reference or a different nucleotide). 
 For calculate AF I count ATGC in a position and I check the reference base and calculate for each allele the frequency (count/num_haplotype).
  
- [calculateAlleleFrequency.py](/tesiFlavia/calculateAlleleFrequency.py)
+ [calculateAlleleFrequency.py](/calculateAlleleFrequency.py)
  
  #### 5. Calculate Fst
  
