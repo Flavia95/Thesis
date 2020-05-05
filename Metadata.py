@@ -30,6 +30,6 @@ with open('metadata.tsv', 'w') as fw:
 	fw.write('\t'.join(['NumSubPopulation', 'NumHaplotype']) + '\n')
 	for num_subpop, num_haplo_subpop in enumerate(num_haplo_for_each_subpop_list):
 		for _ in range(1, num_haplo_subpop + 1):
-			fw.write('\t'.join([str(num_subpop + 1),'\t',str(num_current_haplo)]) + '\n')
+			fw.write('\t'.join([str(num_subpop + 1),str(num_current_haplo)]) + '\n')
 
 			num_current_haplo += 1
