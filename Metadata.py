@@ -1,33 +1,35 @@
 import os
+import sys
 
 ms_command = ''
 
-with open('tree2pop.ms','r') as f:              #input is: output of ms as tree before obtained seq from seqgene
+with open('tree2pop.ms','r') as f:
 	ms_command = f.readline().strip('\n')
 
 print('ms_command: '+ ms_command)     
 
-if '-I' in ms_command:
-	info_list = ms_command.split('-I ')[1].split(' ')[:3]   #extract individual and pop from ms command (in particular from -I)
-	print('-I list:', info_list)
+if '-I' not in ms_command:
+	print('The -I option is missing, therefor nun può fa mang o ca')
+	sys.exit(-1)
 
-	POP = int(info_list[0])
-	NumHaplo = int(info_list[1])
-	ind = int(info_list[2])
-	
-	#for indiv in range (1, (NumHaplo + ind)+1):
-		#print('-individual',indiv)              
-	
+info_list = [int(x) for x in ms_command.split('-I ')[1].split(' -')[0].split(' ')]   #extract individual and pop from ms command (I)
+print('-I list:', info_list)
 
-	metadata = ' '
-	
-	for pop in range(1, POP+1):
-		for haplo in range(1,NumHaplo+1):
-			metadata = ('POP',pop,'individual:', int((haplo - 1) / 2), 'haplo', haplo) 
-			print(metadata)
+num_subpop = info_list[0]
+num_haplo_for_each_subpop_list = info_list[1:]
 
+if num_subpop != len(num_haplo_for_each_subpop_list):
+	print('Num. subpopulations is different from the number of sample configurations')
+	sys.exit(-2)
 
-	#TODO (IMPORTANT): add version of script that there is write of a file metadata tab separated 
-	#to give as second input of script that calculate AF  
+#print('Num. subpopulations:', num_subpop)
+#print('Sample configurations:', num_haplo_for_each_subpop_list)
 
-		
+num_current_haplo = 1
+with open('metadata.tsv', 'w') as fw:
+	fw.write('\t'.join(['NumSubPopulation', 'NumHaplotype']) + '\n')
+	for num_subpop, num_haplo_subpop in enumerate(num_haplo_for_each_subpop_list):
+		for _ in range(1, num_haplo_subpop + 1):
+			fw.write('\t'.join([str(num_subpop + 1),'\t',str(num_current_haplo)]) + '\n')
+
+			num_current_haplo += 1
