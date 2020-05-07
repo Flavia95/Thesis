@@ -1,5 +1,5 @@
 ref_seq = ''
-
+                                                                 #for more replicates
 path_input = '/GfatoAlleleFreq/tree2pop80seq.seqgen'             #Input:2popwith40seq100rep
 
 with open(path_input) as f:
