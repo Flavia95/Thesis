@@ -50,11 +50,6 @@ for num_pop, individual_haplotypes_list in pops_to_haplotypes_dict.items():
         ATCG_counts_dict = Counter(tmp_seq_in_pos_list)
         print('\tPos', pos, '- ', ATCG_counts_dict)   #I put delete it, is not necessary
 
-        #check the reference base and calculate for each allele the frequency. There are only biallelic alleles (or reference or a different nucleotide)
-        #solution
-        #for nucleotide, count in ATCG_counts_dict.items():
-            #print('\t' + nucleotide, count / num_haplotypes)
-
         for nucleotide, count in ATCG_counts_dict.items():
             if count/num_haplotypes != 1:
                 print('\t\tPos', pos, nucleotide, count/num_haplotypes)  #todo: put it in a file
