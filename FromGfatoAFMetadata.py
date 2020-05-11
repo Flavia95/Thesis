@@ -6,7 +6,7 @@ step_node_id = {}
 path_id_ref = ''
 
 # IMPLEMENTAZIONE SEMPLIFICATA: RAGIONIAMO IN TERMINI DI APLOTIPO, SENZA
-# RAGGRUPPARE GLI APLOTIPI A 2 A 2 (aggiungere script aggiornato)
+# RAGGRUPPARE GLI APLOTIPI A 2 A 2 (aggiungere script aggiornato, come fare con i genotipi?)
 pops_to_haplotypes_dict = {}
 with open('metadata280pop.tsv', 'r') as f:
     f.readline()
