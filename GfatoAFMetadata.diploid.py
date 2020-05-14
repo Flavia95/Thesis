@@ -65,3 +65,5 @@ for num_pop, individual_haplotypes_list in pops_to_haplotypes_dict.items():
         for pos, nt_nt_freq_dict in triall_dict.items():
             for nt_nt, freq in nt_nt_freq_dict.items():
                 fw.write(str(pos) + '\t' + nt_nt + '\t' + str(freq) + '\n')
+                
+                #todo: more replicates
