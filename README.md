@@ -7,13 +7,13 @@
 
 - With Seqgene I reconstruct ancestral sequence, because I have need 'links' between bubble.
 
-- SeqGene to GFA.[SeqgenToGfa.py](SeqgenToGfa.py)
+- SeqGene to GFA [SeqgenToGfa.py](SeqgenToGfa.py)
 
--Metadata for info to individuals of pop1 and pop2 [Metadata.py](Metadata.py)
+- Metadata for info to individuals of pop1 and pop2 [Metadata.py](Metadata.py)
 
 - GFA to Allele Frequencies.
 
-Aploid [GfatoAFMetadataAploid.py](GfatoAFMetadataAploid.py)
-Diploide [GfatoAFMetadata.diploid.py](GfatoAFMetadata.diploid.py)
+Aploid [GfatoAFMetadataAploid.py](GfatoAFMetadataAploid.py).
+Diploide [GfatoAFMetadata.diploid.py](GfatoAFMetadata.diploid.py).
 
 - GFA to Fst
