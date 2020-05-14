@@ -9,9 +9,7 @@
  
 [MstoGfa.py](MstoGfa.py)
 
-- With Seqgene I reconstruct ancestral sequence, because I have need 'links' between bubble.
-
-- SeqGene to GFA.
+- SeqGene to GFA. With Seqgene I reconstruct ancestral sequence, because I have need 'links' between bubble.
 
 [SeqgenToGfa.py](SeqgenToGfa.py)
 
