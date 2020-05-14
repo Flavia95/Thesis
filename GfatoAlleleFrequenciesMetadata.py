@@ -5,7 +5,7 @@ step_node_id = {}
 pops_to_haplotypes_dict = {}
 path_id_ref = ''
 
-# IMPLEMENTAZIONE SEMPLIFICATA: RAGIONO IN TERMINI DI APLOTIPO, SENZA RAGGRUPPARE GLI APLOTIPI A 2 A 2 
+# IMPLEMENTAZIONE SEMPLIFICATA: RAGIONO IN TERMINI DI APLOTIPO, FREQUENZE ALLELICHE, UN ALLELE RISPETTO AL TOTALE
 with open('metadata280pop.tsv', 'r') as f:
     f.readline()
     for line in f:                                              #'1'(pop): ['1', '2'],
