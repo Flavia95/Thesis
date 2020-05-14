@@ -6,7 +6,9 @@
 
 - Simulation sequences (MS) to VCF and calculate Allele Frequencies and Fst on VCF for look if simulations works well. 
 
-[ms2vcf.py](ms2vcf.py) 
+[ms2vcf.py](ms2vcf.py)
+
+[CalculateFstonVCF.py](CalculateFstonVCF.py)
 
 - Simulation sequences (MS) to GFA.
  
