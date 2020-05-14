@@ -24,9 +24,9 @@
 
 - GFA to Allele Frequencies.
 
-Aploid [GfatoAFMetadataAploid.py](GfatoAFMetadataAploid.py).
+Allele Frequencies [GfatoAlleleFrequenciesMetadata.py](GfatoAlleleFrequenciesMetadata.py).
 
-Diploide [GfatoAFMetadata.diploid.py](GfatoAFMetadata.diploid.py).
+Genotyping Frequencies [GfatoGenotypeFrequencyMetadata.py](GfatoGenotypeFrequencyMetadata.py).
 
 - GFA to Fst: loading
 
