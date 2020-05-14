@@ -8,4 +8,6 @@
 
 - SeqGene to GFA.
 
-- From GFA to Allele Frequencies.
+- GFA to Allele Frequencies.
+
+- GFA to Fst.
