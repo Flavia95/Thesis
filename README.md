@@ -1,4 +1,4 @@
-# Thesis
+## Thesis
 
 - Simulation sequences (MS) to VCF and calculate Allele Frequencies and Fst on VCF for look if simulations works well. 
 [ms2vcf.py](ms2vcf.py) 
@@ -16,4 +16,6 @@
 Aploid [GfatoAFMetadataAploid.py](GfatoAFMetadataAploid.py).
 Diploide [GfatoAFMetadata.diploid.py](GfatoAFMetadata.diploid.py).
 
-- GFA to Fst
+- GFA to Fst: loading
+
+- GFAtoVCF: for validate results 
