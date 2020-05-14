@@ -1,7 +1,7 @@
 # Thesis
 
 - Simulation sequences (MS) to VCF and calculate Allele Frequencies and Fst on VCF for look if simulations works well. 
-[ms2vcf.py](/Thesis/ms2vcf.py) 
+[ms2vcf.py](ms2vcf.py) 
 
 - Simulation sequences (MS) to GFA [MstoGfa.py](Thesis/MstoGfa.py)
 
