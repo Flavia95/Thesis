@@ -6,7 +6,7 @@ step_node_id = {}
 path_id_ref = ''
 
 # IMPLEMENTAZIONE SEMPLIFICATA: RAGIONIAMO IN TERMINI DI APLOTIPO, SENZA
-# RAGGRUPPARE GLI APLOTIPI A 2 A 2 (aggiungere script aggiornato, come fare con i genotipi?)
+# RAGGRUPPARE GLI APLOTIPI A 2 A 2 
 pops_to_haplotypes_dict = {}
 with open('metadata280pop.tsv', 'r') as f:
     f.readline()
@@ -52,4 +52,4 @@ for num_pop, individual_haplotypes_list in pops_to_haplotypes_dict.items():
 
         for nucleotide, count in ATCG_counts_dict.items():
             if count/num_haplotypes != 1:
-                print('\t\tPos', pos, nucleotide, count/num_haplotypes)  #todo: put it in a file
+                print('\t\tPos', pos, nucleotide, count/num_haplotypes)  
