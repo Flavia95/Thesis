@@ -1,13 +1,12 @@
 from collections import Counter
 path_node_id = {}
 step_node_id = {}
-
+pops_to_haplotypes_dict = {}
 path_id_ref = ''
 
 # RAGGRUPPARE GLI APLOTIPI A 2 A 2 (se gli individui sono diploidi come in questo caso)    
 
 #1. Load metadata for calculate info of tree leaves and dict (key:num_pop and value:num_haplo)
-pops_to_haplotypes_dict = {}
 with open('metadata280pop.tsv', 'r') as f:
     f.readline()
 
