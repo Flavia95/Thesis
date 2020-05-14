@@ -2,12 +2,10 @@ from collections import Counter
 
 path_node_id = {}
 step_node_id = {}
-
+pops_to_haplotypes_dict = {}
 path_id_ref = ''
 
-# IMPLEMENTAZIONE SEMPLIFICATA: RAGIONIAMO IN TERMINI DI APLOTIPO, SENZA
-# RAGGRUPPARE GLI APLOTIPI A 2 A 2 
-pops_to_haplotypes_dict = {}
+# IMPLEMENTAZIONE SEMPLIFICATA: RAGIONO IN TERMINI DI APLOTIPO, SENZA RAGGRUPPARE GLI APLOTIPI A 2 A 2 
 with open('metadata280pop.tsv', 'r') as f:
     f.readline()
     for line in f:                                              #'1'(pop): ['1', '2'],
