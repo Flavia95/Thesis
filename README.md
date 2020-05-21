@@ -28,10 +28,10 @@ Allele Frequencies [GfatoAlleleFrequenciesMetadata.py](GfatoAlleleFrequenciesMet
 
 Genotyping Frequencies [GfatoGenotypeFrequencyMetadata.py](GfatoGenotypeFrequencyMetadata.py).
 
-- GFA to Fst: loading(two methods)
+- GFA to Fst: loading (two methods)
 
 Fst interpopulation
 
 Fst intrapopulation
 
-- GFAtoVCF: for validate results 
+- GFAtoVCF: for validate results. 
