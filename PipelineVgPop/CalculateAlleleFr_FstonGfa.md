@@ -5,7 +5,7 @@ After [SimulationToGFA.md](SimulationToGFA.md) where I convert MStoGfa for analy
 
 For calculate AF I count ATGC in a position and I check the reference base and calculate for each allele the frequency (count/num_haplotype).
  
- [calculateAlleleFrequency.py](/calculateAlleleFrequency.py)
+ [GfatoAlleleFrequenciesMetadata.py](/GfatoAlleleFrequenciesMetadata.py)
  
  #### 2. Calculate Genotype Frequency on GFA
  
