@@ -26,9 +26,11 @@
 
 Allele Frequencies [GfatoAlleleFrequenciesMetadata.py](GfatoAlleleFrequenciesMetadata.py).
 
-Genotyping Frequencies [GfatoGenotypeFrequencyMetadata.py](GfatoGenotypeFrequencyMetadata.py).
+Genotyping Frequencies [GfatoGenotypeFrequenciesMetadata.py](GfatoGenotypeFrequencyMetadata.py).
 
 - GFA to Fst: loading (two methods)
+
+[GfatoFst.py](GfatoFst.py)
 
 Fst interpopulation
 
