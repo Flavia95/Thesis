@@ -9,6 +9,9 @@ For calculate AF I count ATGC in a position and I check the reference base and c
  
  #### 2. Calculate Genotype Frequency on GFA
  
+ [GfatoGenotypeFrequenciesMetadata.py](/GfatoGenotypeFrequenciesMetadata.py)
+ 
  #### 3. Calculate Fst on GFA
+[GfatoFst.py](/GfatoFst.py)
  
  
