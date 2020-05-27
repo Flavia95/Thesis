@@ -1,36 +1,35 @@
 import statistics
 import matplotlib.pyplot as pyplot
-
 mean_fst_list = []
-
-for num_rep in range(1,2):                                 #range replicate
-	f1 = open('allelfr_rep{}.pop1.tsv'.format(num_rep))
-	f2 = open('allelfr_rep{}.pop2.tsv'.format(num_rep))
-
 fst_list = []
-#f1.readline() # Skip header or first line
-#f2.readline() 
 
-for (line1, line2) in zip(f1, f2):
-    freq_pop1 = line1.strip('\n').split('\t')[-1]   #last column
-    freq_pop2 = line2.strip('\n').split('\t')[-1]  
+#1. Calculate Fst = variance/(mean)*(1-mean)
+#Open files of allele_freq from pop1 and allele_freq from pop2
 
-    #print(freq_pop1)
-    #print(freq_pop2)
-    
-    freq0_pop1 = float(freq_pop1)
-    freq0_pop2=float(freq_pop2)
-    mean = statistics.mean([freq0_pop1, freq0_pop2])
-    #print(mean)
+for num_rep in range(0,98):                               
+    f1 = open('allelfr_rep{}.pop1.tsv'.format(num_rep))    
+    f2 = open('allelfr_rep{}.pop2.tsv'.format(num_rep))
 
-    fst = statistics.pvariance([freq0_pop1, freq0_pop2])/((mean)*(1-mean))
-    #print(freq0_pop1, freq0_pop2)
-    fst_list.append(fst)
+    for (line1, line2) in zip(f1, f2):
+        freq_pop1 = line1.strip('\n').split('\t')[-1]   #last column for allel_freq
+        freq_pop2 = line2.strip('\n').split('\t')[-1]  
+	#print(freq_pop1)
+        #print(freq_pop2)
+        
+#2.Mean of frequencies	
+	freq0_pop1 = float(freq_pop1)
+        freq0_pop2=float(freq_pop2)
+        mean = statistics.mean([freq0_pop1, freq0_pop2])
+        #print(mean)
 
-    #f1.close()
-    #f2.close()
+#3.Calculate Fst
+        fst = statistics.pvariance([freq0_pop1, freq0_pop2])/((mean)*(1-mean))
+        #print(freq0_pop1, freq0_pop2)
+        
+	fst_list.append(fst)
+	mean_fst_list.append(statistics.mean(fst_list))
 
+    print(mean_fst_list)
 
-    mean_fst_list.append(statistics.mean(fst_list))
-
-print(mean_fst_list)
+    f1.close()  #rememeber of close file :)
+    f2.close()
