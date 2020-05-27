@@ -12,7 +12,7 @@ I had Allele Frequencies also as different of 1 and for triallelic sites I sumn 
 
 
 #### 2. Calculate Genotype Frequencies on GFA
-[GfatoGenotypeFrequencyMetadata.py] (/GfatoGenotypeFrequencyMetadata.py)
+[GfatoGenotypeFrequencyMetadata.py](/GfatoGenotypeFrequencyMetadata.py)
 
  
  #### 3. Calculate Fst on GFA
