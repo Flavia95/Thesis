@@ -1,4 +1,4 @@
-After [SimulationToGfa.md](/SimulationToGfa.md). 
+After [SimulationToGFA.md](/SimulationToGFA.md). 
 
 Now I calculate analysis of population genetics on GFA.
 
