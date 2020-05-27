@@ -1,4 +1,4 @@
-After [SimulationToGfa.md](SimulationToGfa.md) where I convert MStoGfa for analysis of population genetics.
+After [SimulationToGFA.md](SimulationToGFA.md) where I convert MStoGfa for analysis of population genetics.
 
 
  #### 1. Calculate Allele Frequency on GFA :)
