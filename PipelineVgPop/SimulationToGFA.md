@@ -1,4 +1,6 @@
-After [SimulationToVcf.md](SimulationToVcf.md) I convert MStoGfa for analysis of population genetics.
+After [SimulationToVcf.md](SimulationToVcf.md). 
+
+Now I convert MStoGfa for analysis of population genetics.
 
 #### 1. Simulation sequences (MS) 
 
@@ -31,14 +33,8 @@ I have Tree with the family history, but the reconstructed sequence is missing.
  #### 3. Seq-gene to GFA
 
  [SeqGenetoGfa.py](/SeqgenToGfa.py)
+
+I see the evolution of two pop separated a three different time, I repeat this command line for three different time.
+For each time I calculate Allele Frequencies, Genotype Frequencies and Fst.
  
- 
- #### 4. Calculate Allele Frequency on GFA :)
- 
-In this example there are only biallelic alleles (or reference or a different nucleotide). 
-For calculate AF I count ATGC in a position and I check the reference base and calculate for each allele the frequency (count/num_haplotype).
- 
- [calculateAlleleFrequency.py](/calculateAlleleFrequency.py)
- 
- #### 5. Calculate Fst
  
