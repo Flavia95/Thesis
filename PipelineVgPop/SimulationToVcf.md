@@ -39,7 +39,7 @@ parallel vcftools --vcf ms_rep{1}.bcf.vcf --freq --out ms_rep{1}.bcf.pop1.vcf ::
 parallel vcftools --vcf ms_rep{1}.bcf.vcf --freq --out ms_rep{1}.bcf.pop2.vcf ::: {1..100}  #pop2
 ```
 #### 6. Fst script
-[CalculateFst.py](/Thesis/CalculateFst.py)  
+[CalculateFstonVCF.py](/CalculateFstonVCF.py)  
 
 CalculateFSt for three different time.
 
