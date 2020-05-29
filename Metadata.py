@@ -9,7 +9,7 @@ with open('tree2pop.ms','r') as f:
 print('ms_command: '+ ms_command)     
 
 if '-I' not in ms_command:
-	print('The -I option is missing, therefor nun può fa mang o ca')
+	print('The -I option is missing')
 	sys.exit(-1)
 
 info_list = [int(x) for x in ms_command.split('-I ')[1].split(' -')[0].split(' ')]   #extract individual and pop from ms command (I)
