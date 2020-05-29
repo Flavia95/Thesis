@@ -10,7 +10,7 @@
 
 [CalculateFstonVCF.py](CalculateFstonVCF.py)
 
-See: [SimulationToVcf.md] (PipelineVgPop/SimulationToVcf.md)
+See: [SimulationToVcf.md](PipelineVgPop/SimulationToVcf.md)
 
 ### 3.Simulation sequences (MS) to GFA.
  
@@ -22,7 +22,7 @@ With Seqgen I reconstruct ancestral sequence, because I have need 'links' betwee
 
 [SeqgenToGfa.py](SeqgenToGfa.py)
 
-See: [SimulationToGFA.md] (PipelineVgPop/SimulationToGFA.md)
+See: [SimulationToGFA.md](PipelineVgPop/SimulationToGFA.md)
 
 ### 5. Metadata for info to individuals of pop1 and pop2.
 
@@ -42,6 +42,6 @@ Fst interpopulation
 
 Fst intrapopulation
 
-See: [CalculateAlleleFr_FstonGfa.md] (PipelineVgPop/CalculateAlleleFr_FstonGfa.md)
+See: [CalculateAlleleFr_FstonGfa.md](PipelineVgPop/CalculateAlleleFr_FstonGfa.md)
 
 
