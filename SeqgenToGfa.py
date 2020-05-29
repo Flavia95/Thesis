@@ -1,6 +1,6 @@
 ref_seq = ''
                                                                  #for more replicates
-path_input = '/GfatoAlleleFreq/tree2pop80seq.seqgen'             #Input:2popwith40seq100rep
+path_input = 'T1.seqgen'             #Input:2popwith40seq100rep
 
 with open(path_input) as f:
     for num_rep, i in enumerate(f.read().split('\n ')):   #with for I read single file and with external loop read and split output in N replicate
@@ -96,7 +96,7 @@ with open(path_input) as f:
 
             
 
-        path_gfa = 'rep{}.seq.gfa'.format(num_rep)
+        path_gfa = 'rep{}.seqtogfaT1.gfa'.format(num_rep)
         with open(path_gfa, 'w') as fw:
             fw.write(steps_to_write + paths_to_write + links_to_write)
         print(path_gfa + ' written')
