@@ -14,7 +14,7 @@
  
 [MstoGfa.py](MstoGfa.py)
 
-- SeqGene to GFA. With Seqgene I reconstruct ancestral sequence, because I have need 'links' between bubble.
+- SeqGene to GFA. With Seqgen I reconstruct ancestral sequence, because I have need 'links' between bubble.
 
 [SeqgenToGfa.py](SeqgenToGfa.py)
 
