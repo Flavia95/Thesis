@@ -57,6 +57,14 @@ I convert SeqGen to Gfa
 
 [SeqgentoGfa.py](/SeqgenToGfa.py)
 
+ 
+#### 4. Extract individuals from populations because I calculate Allele Frequencies only for leaf of three.
+
+Extract individual and pop from ms command (I)
+-I: first is the num of pop, two is the seq of pop1 and three the seq of pop2
+
+[Metadata.py](/Metadata.py)
+
 I calculate on GFA Allele Frequencies, Genotype Frequencies and Fst.
 [CalculateAlleleFr_FstonGfa.md](CalculateAlleleFr_FstonGfa.md)
  
