@@ -1,6 +1,6 @@
 ref_seq = ''
                                                                  #for more replicates
-path_input = 'T1.seqgen'             #Input:2popwith40seq100rep
+path_input = 'T1.seqgen'             #Input:2popwith40seqforpop100rep
 
 with open(path_input) as f:
     for num_rep, i in enumerate(f.read().split('\n ')):   #with for I read single file and with external loop read and split output in N replicate
