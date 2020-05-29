@@ -3,7 +3,7 @@ import sys
 
 ms_command = ''
 
-with open('treems400popT1','r') as f:
+with open('treems40popT1','r') as f:
 	ms_command = f.readline().strip('\n')
 	   
 print('ms_command: '+ ms_command)     
@@ -27,7 +27,7 @@ print('Sample configurations:', num_haplo_for_each_subpop_list)
 
 
 num_current_haplo = 1
-with open('metadata2pop400.tsv', 'w') as fw:                                              
+with open('metadata2pop40.tsv', 'w') as fw:                                              
 	fw.write('\t'.join(['NumSubPopulation', 'NumHaplotype']) + '\n')                             #write info for next analyses,NumHaplotype
 	for num_subpop, num_haplo_subpop in enumerate(num_haplo_for_each_subpop_list):
 		for _ in range(1, num_haplo_subpop + 1):
