@@ -30,7 +30,7 @@ l: lenght of sequeces
 z: definite seed
  
  #### 3. Seq-gene to GFA
- Simulation for three different time
+ Simulation for three different time (ej different for three simulations). 
 
 ```
 ./ms 80 100 -T -t 11.2 -I 2 40 40 -g 1 44.36 -n 2 0.05 -eg 0.03125 1 0.0 -ej 0.03125 2 1 > treems40popT1  #5.000 generazioni
