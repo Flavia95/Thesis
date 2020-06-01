@@ -12,5 +12,7 @@ For calculate AF I count ATGC in a position and I check the reference base and c
  
  #### 3. Calculate Fst on GFA
 [GfatoFst.py](/GfatoFst.py)
+
+#### 4. Calculate Hardy-Weinberg
  
  
