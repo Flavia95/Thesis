@@ -27,9 +27,15 @@ for num_rep in range(0,98):
         #print(freq0_pop1, freq0_pop2)
         
 	fst_list.append(fst)
-	mean_fst_list.append(statistics.mean(fst_list))
+	
+if len(fst_list) == 0:
+   print(num_rep, 'missing values', fst_list)
+   continue
 
-    print(mean_fst_list)
+    mean_fst_list.append(statistics.mean(fst_list))
 
-    f1.close()  #rememeber of close file :)
+    f1.close()
     f2.close()
+
+print(mean_fst_list)
+print(len(mean_fst_list))
