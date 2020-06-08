@@ -16,7 +16,7 @@ See: [SimulationToVcf.md](PipelineVgPop/SimulationToVcf.md)
  
 [MstoGfa.py](MstoGfa.py)  #don't use it.
 
-### 4. SeqGene to GFA. 
+### 4. SeqGen to GFA. 
 
 With Seqgen I reconstruct ancestral sequence, because I have need 'links' between bubble.
 
