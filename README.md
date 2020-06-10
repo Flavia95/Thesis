@@ -45,3 +45,5 @@ Fst intrapopulation
 See: [CalculateAlleleFr_FstonGfa.md](PipelineVgPop/CalculateAlleleFr_FstonGfa.md)
 
 
+Author
+Flavia Villani
