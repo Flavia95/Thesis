@@ -44,6 +44,8 @@ Fst intrapopulation
 
 See: [CalculateAlleleFr_FstonGfa.md](PipelineVgPop/CalculateAlleleFr_FstonGfa.md)
 
+### 8. Allele frequencies on HLA
+
 
 Author
 Flavia Villani
