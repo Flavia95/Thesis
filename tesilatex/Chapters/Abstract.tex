@@ -1,0 +1,23 @@
+% Chapter discussion
+
+\chapter{Abstract-1pagina}
+    
+ % Main chapter title
+
+\label{Chapter0} % For referencing the chapter elsewhere, use \ref{Chapter4} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Studies of genomic selection typically assume a single linear reference genome. However, structural and complex variation can render this simplified model inapplicable. To address this limitation, during my thesis I started the development of a software library for the statistical analysis of negative selection using pangenomic data models. Typically represented in the Graphical Fragment Assembly (GFA) file format, these models represent whole genome alignments in a compact structure, without loosing information. Because a pangenome embeds the linear genomes from which it is constructed, we can choose a particular reference genome and project the variants on it. """ DIRE CHE E' RAPPRESENTATO COME UN GRAFO E POI CHE LE ZONE CONTENENTI VARIANTI APPAIONO COME BOLLE(which appear as bubbles in the graph)""". Therefore, I focused on develop algorithms for bubble detection, genereting Variant Call Format (VCF) files directly from graphs.\\
+
+\noindent
+We can use this variants projection to drive standard population genetic analyses. In my thesis, I focused on the calculation of Fst for three different time.
+
