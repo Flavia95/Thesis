@@ -14,7 +14,9 @@ with open(path_input) as f:
         num_to_seq_dict = {}
         for num_seq in replicate.strip(' \n').split('\n')[1:]:
             num, seq = num_seq.split('\t')
-            num_to_seq_dict[int(num)] = seq
+
+            if int(num) <= 80 or int(num) == num_ref:
+                num_to_seq_dict[int(num)] = seq
 
         if num_ref in num_to_seq_dict:
             ref_seq = seq
