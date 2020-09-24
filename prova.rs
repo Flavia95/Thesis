@@ -65,17 +65,17 @@ pub fn paths_to_steps(graph: &HashGraph) -> HashMap<String, Vec<String>> {
 
     //for (path_name, steps_list) in paths_to_steps {
  
-    let result: HashMap<String, u64> = HashMap::new();
-    for key in paths_to_steps.keys() {
-    	for step in paths_to_steps[key] {
-    	    let val = result.contains(&step).get_mut().or_else();
-    	    val += 1;
-	}
-   }
+    //let result: HashMap<String, u64> = HashMap::new();
+    //for key in paths_to_steps.keys() {
+    	//for step in paths_to_steps[key] {
+    	    //let val = result.contains(&step).get_mut().or_else();
+    	    //val += 1;
+	//}
+   //}
 	
-   result
+   //result
    
-}
+//}
 
 
 
