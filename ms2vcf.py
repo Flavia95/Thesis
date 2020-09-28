@@ -60,3 +60,5 @@ for num_rep, pos_locus_to_sample_to_genotype_dict in replicate_to_pos_locus_to_s
 				vcf_row_list += [sample_to_genotype_dict[n_sample]]
 
 			fw.write('\t'.join(vcf_row_list) + '\n')
+			
+			
