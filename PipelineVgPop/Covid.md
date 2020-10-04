@@ -1,4 +1,4 @@
-Pipeline assembly covid
+Pipeline assembly de novo
 
 1. seqtk seq -a ERX4112805.fastq > ERX4112805.fasta #convert fastq in fasta
 
